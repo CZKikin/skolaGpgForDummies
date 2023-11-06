@@ -10,3 +10,4 @@ ukol3(){
     echo "Jestli se podařilo gratuluji... tohle vše stačí pro soukromou komunikaci na interntetu :)"
 }
 
+ukol3
