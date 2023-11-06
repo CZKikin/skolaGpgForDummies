@@ -11,9 +11,9 @@ ukol2(){
     echo "Až budeš mít hotovo, napiš command '~/pokracuj'"
 }
 
+rm ~/pokracuj
 curl -o- https://raw.githubusercontent.com/CZKikin/skolaGpgForDummies/master/part3.sh >pomoc3.sh
 chmod +x
-rm ~/pokracuj
 ln pomoc3.sh ~/pokracuj
 clear
 
