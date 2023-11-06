@@ -13,6 +13,7 @@ ukol2(){
 
 curl -o- https://raw.githubusercontent.com/CZKikin/skolaGpgForDummies/master/part3.sh >pomoc3.sh
 chmod +x
+rm ~/pokracuj
 ln pomoc3.sh ~/pokracuj
 clear
 
