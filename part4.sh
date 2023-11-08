@@ -3,7 +3,7 @@ ukol4(){
     echo "Po dokončení daného úkolu je to již vše :)"
 }
 
-email=`gpg --list-key | grep @ | awk '{print $8}' | sed "s/<//g" | sed "s/>//g"`
+email=`gpg --list-key | grep -Eo "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b"`
 echo "Pošli zašifrovaný email na adresu cvičícího. V emailu napiš jméno, příjmení a větu 'To máme dneska ale fajný den'" > msg.txt
 zprava=`gpg -r $email --armor -e msg.txt`
 rm msg.txt
