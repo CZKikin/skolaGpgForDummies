@@ -7,7 +7,13 @@ ukol3(){
     echo "Teď si stáhneme klíč spolužáka"
     echo "Najdeme si jeho ID příkazem gpg --keyserver keyserver.ubuntu.com --search-keys email@spoluzaka.cz' a číslem vyberem"
     echo "No... a zašifrujeme stejně jako pro sebe, jen napíšeme email spolužáka"
-    echo "Jestli se podařilo gratuluji... tohle vše stačí pro soukromou komunikaci na interntetu :)"
+    echo "Až budeš mít hotovo, napiš command '~/pokracuj'"
 }
+
+rm ~/pokracuj
+curl -o- https://raw.githubusercontent.com/CZKikin/skolaGpgForDummies/master/part4.sh >pomoc4.sh
+chmod +x pomoc4.sh
+ln pomoc4.sh ~/pokracuj
+clear
 
 ukol3

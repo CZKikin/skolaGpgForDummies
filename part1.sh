@@ -18,7 +18,7 @@ ukol1(){
     echo "'sudo apt update && sudo apt install gpg'"
     echo "Pokud nepužíváš ubuntu, najdi si na netu jak se stahuje program na tvé distribuci"
     echo "Nemusíš zadávat pravdivé údaje, email slouží jen jako identifikátor"
-    echo "Na vše můžeš mačkat jen enter, délku klíče ale doporučuji změnit na 4096, je to bezpečnější"
+    echo "Na vše můžeš mačkat jen enter, délku klíče ale doporučuji změnit na 4096 pro RSA, je to bezpečnější"
     echo "A na konci při potvrzení jen Y[enter] a o[enter]"
     echo "Až budeš mít hotovo, napiš command '~/pokracuj'"
 }
