@@ -7,3 +7,5 @@ email=`gpg --list-key | grep -Eo "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2
 echo "Pošli zašifrovaný email na adresu cvičícího. V emailu napiš jméno, příjmení a větu 'To máme dneska ale fajný den'" > msg.txt
 zprava=`gpg -r $email --armor -e msg.txt`
 rm msg.txt
+
+ukol4
